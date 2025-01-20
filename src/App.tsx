@@ -2,6 +2,8 @@ import Alert from "./components/Alert";
 import Button from "./components/Button";
 import ListGroup2 from "./components/ListGroup2";
 import { useState } from "react";
+import HomePage from "./pages/HomePage";
+import LoginPage from "./pages/LoginPage";
 
 function App() {
   //let items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
@@ -14,10 +16,7 @@ function App() {
 
   return (
     <div>
-      {alertVisible && (
-        <Alert onClose={() => setAlertVisibility(false)}>My alert</Alert>
-      )}
-      <Button onClick={() => setAlertVisibility(true)}>My Label</Button>
+      <LoginPage />
     </div>
   );
 }
